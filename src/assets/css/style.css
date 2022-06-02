@@ -1,0 +1,22 @@
+/* main background */
+#mainId{
+    background-image: url(/src/assets/image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 1080px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#mainLoginRegister{
+    background-image: url(/src/assets/image/background-login-register.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover !important;
+}
