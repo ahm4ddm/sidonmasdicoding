@@ -1,3 +1,10 @@
+.bg {
+    background-image: url('/background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
 .bg-login-image {
     background-image: url('/ilus-login.png');
     background-position: center;
@@ -14,6 +21,7 @@
     background-color: #4e73df;
     background-image: url("/background-login-register.jpg");
     background-size: cover;
+    height: 100vh;
   }
 
 .card {
