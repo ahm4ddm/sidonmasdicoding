@@ -6,9 +6,9 @@ export class MyMain extends LitElement {
   }
   render() {
     return html`
-    <main id="mainId">
+    <main class="bg">
     <div class="container">
-      <div class="row my-5">
+      <div class="row py-5">
         <div class="col-md">
         <img class="img-fluid my-5" src="/ilus-landing.png" alt="people send money">
         </div>
