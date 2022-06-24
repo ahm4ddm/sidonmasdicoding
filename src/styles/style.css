@@ -1,8 +1,22 @@
+.skip-link {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    padding: 8px;
+    background-color: #EA9E9E;
+    color: black;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 .bg {
     background-image: url('/background.jpg');
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 950px;
 }
 
 .bg-login-image {
