@@ -6,6 +6,7 @@ export class MyNav extends LitElement {
   }
   render() {
     return html`
+    <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="/">
@@ -20,19 +21,11 @@ export class MyNav extends LitElement {
                   <a class="nav-link fs-5" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" href="/donasi">Donasi</a>
+                  <a class="nav-link fs-5" href="/donasi" target="_blank" rel="noopener noreferrer">Donasi</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link fs-5" href="/about">Tentang Kami</a>
                 </li>
-              </ul>
-              <ul class="navbar-nav ms-auto gap-2">
-                  <a href="/login">
-                      <li class="nav-item"><button class="btn btn-success me-md-2 fs-5" type="button">Masuk</button></li>
-                  </a>
-                  <a href="/register">
-                      <li class="nav-item"><button class="btn btn-light fs-5" type="button">Daftar</button></li>  
-                  </a>
               </ul>
             </div>
           </div>
