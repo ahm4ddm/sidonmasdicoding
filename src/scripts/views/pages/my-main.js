@@ -6,7 +6,7 @@ export class MyMain extends LitElement {
   }
   render() {
     return html`
-    <main class="bg">
+    <main class="bg" id="maincontent">
     <div class="container">
       <div class="row py-5">
         <div class="col-md">
@@ -15,10 +15,14 @@ export class MyMain extends LitElement {
         <div class="col-md">
       <p class="fs-1 fw-bold my-5">Mari Bantu Donasi Masjid</p>
       <p class="fs-4 text-break">Sekecil apapun yang Anda berikan akan bermanfaat bagi yang membutuhkan</p>
-      <button class="btn btn btn-success fs-3 my-3" type="button">Mulai Donasi</button>
+      <a href="/donasi" target="_blank" rel="noopener noreferrer">
+        <button class="btn btn btn-success fs-3 my-3" type="button">Mulai Donasi </button>
+      <a/>
       </div>
     </div>
-    </main>`;
+    </main>
+    <my-footer></my-footer>
+   `;
   }
 }
 customElements.define('my-main', MyMain);
