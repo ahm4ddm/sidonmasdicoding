@@ -4,5 +4,6 @@ import 'bootstrap/dist/js/bootstrap.min';
 import '../styles/style.css';
 import './views/pages/my-nav';
 import './views/pages/my-main';
+import './views/pages/my-footer';
 import App from './views/app';
 new App();
