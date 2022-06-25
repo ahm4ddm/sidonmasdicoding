@@ -1,6 +1,7 @@
 # Prerequisite
-1. Webpack
-2. Lampp
+1. Node Js
+2. NPM
+3. Lampp
 
 # Setup
 1. Clone repo
