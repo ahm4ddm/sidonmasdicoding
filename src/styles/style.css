@@ -13,27 +13,27 @@
 }
 
 .bg {
-    background-image: url('/background.jpg');
+    background-image: url('/background.webp');
     background-position: center;
     background-size: cover;
     height: 950px;
 }
 
 .bg-login-image {
-    background-image: url('/ilus-login.png');
+    background-image: url('/ilus-login.webp');
     background-position: center;
     background-size: cover;
 }
 
 .bg-register-image{
-    background: url('/ilus-register.png');
+    background: url('/ilus-register.webp');
     background-position: center;
     background-size: cover;
 }
 
 .bg-primary-login-register {
     background-color: #4e73df;
-    background-image: url("/background-login-register.jpg");
+    background-image: url("/background-login-register.webp");
     background-size: cover;
     height: 100vh;
   }
