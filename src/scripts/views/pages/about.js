@@ -22,7 +22,7 @@ export class About extends LitElement {
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col mb-3">
                 <div class="card">
-                    <img src="/profiles/dany.jpeg" class="card-img-top" alt="foto">
+                    <img src="/profiles/dany.webp" class="card-img-top" alt="foto">
                     <div class="card-body text-center">
                         <h5 class="card-title fs-4">Ahmad Dany Mirza</h5>
                         <p class="card-text my-1 fs-5">Universitas Brawijaya</p>
@@ -36,7 +36,7 @@ export class About extends LitElement {
 
             <div class="col mb-3">
                 <div class="card">
-                    <img src="/profiles/aryandi.jpeg" class="card-img-top" alt="foto">
+                    <img src="/profiles/aryandi.webp" class="card-img-top" alt="foto">
                     <div class="card-body text-center">
                         <h5 class="card-title fs-4">Aryandi Syahputra</h5>
                         <p class="card-text my-1 fs-5">Universitas Gunadarma</p>
@@ -50,7 +50,7 @@ export class About extends LitElement {
 
             <div class="col mb-3">
                 <div class="card">
-                    <img src="/profiles/bagus.jpeg" class="card-img-top" alt="foto">
+                    <img src="/profiles/bagus.webp" class="card-img-top" alt="foto">
                     <div class="card-body text-center">
                         <h5 class="card-title fs-4">Ida Bagus Gede Pala Asmara</h5>
                         <p class="card-text my-1 fs-5">Universitas Halu Oleo</p>
@@ -64,7 +64,7 @@ export class About extends LitElement {
 
             <div class="col mb-3">
                 <div class="card">
-                    <img src="/profiles/rosa.jpeg" class="card-img-top" alt="foto">
+                    <img src="/profiles/rosa.webp" class="card-img-top" alt="foto">
                     <div class="card-body text-center">
                         <h5 class="card-title fs-4">Rosa Sansabila</h5>
                         <p class="card-text my-1 fs-5">Universitas Mataram</p>
