@@ -23,7 +23,9 @@
     XAMPP: Starting MySQL...ok.
     XAMPP: Starting ProFTPD...ok.
     ```
-6. Jalankan webpack
+6. Import Database
+    Masuk di halaman *phpmyadmin* lalu lakukan impor database
+7. Jalankan webpack
     ```
     $ npm run dev
     ```
