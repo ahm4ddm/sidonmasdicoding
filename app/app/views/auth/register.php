@@ -38,12 +38,11 @@
                             <form class="user" action="<?=BASEURL ;?>/auth/createakun" method="post">
                                 <div class="form-group">
                                     <input type="text" name="fullname" maxlength="255" class="form-control form-control-user" id="fullname"
-                                        placeholder="Nama Masjid" autocomplete="off" required>
+                                        placeholder="Nama" autocomplete="off" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="username" maxlength="64" class="form-control form-control-user" id="username"
                                         placeholder="Username" autocomplete="off" required>
-                                    <small id="username" class="form-text text-muted px-2">Jika Anda sebagai pengelola masjid masukan<i class="text-danger"> nama masjid*</i></small>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" name="email" maxlength="255" class="form-control form-control-user" id="email"
