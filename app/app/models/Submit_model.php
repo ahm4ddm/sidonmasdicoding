@@ -127,7 +127,7 @@
             $namaFileBaru .= $ekstensiGambar;
             
 
-            move_uploaded_file($tmpName, '../public/img/struk/'. $namaFileBaru);
+            move_uploaded_file($tmpName, '../main/img/struk/'. $namaFileBaru);
 
             return $namaFileBaru;
 
@@ -168,7 +168,7 @@
             $namaFileBaru .= $ekstensiGambar;
             
 
-            move_uploaded_file($tmpName, '../public/img/struk/'. $namaFileBaru);
+            move_uploaded_file($tmpName, '../main/img/struk/'. $namaFileBaru);
 
             return $namaFileBaru;
 
@@ -192,7 +192,7 @@
                 if(!$gambar){
                     return false;
                 }
-                unlink('../public/img/struk/' . $gambarLama['gambar']);
+                unlink('../main/img/struk/' . $gambarLama['gambar']);
             }
 
             $this->db->query("UPDATE tb_submit SET gambar = :gambar, jumlah = :jumlah, tanggal = current_timestamp() 
