@@ -174,7 +174,7 @@
                                             <?php foreach($list as $masjid) :?>
                                                 <tr>
                                                     <td><?=ucwords($masjid['id_masjid']) ;?></td>
-                                                    <td><?=ucwords($masjid['nama']) ;?></td>
+                                                    <td><?=ucwords($masjid['fullname']) ;?></td>
                                                     <td><?=$masjid['total_donatur'] ;?> Orang</td>
                                                     <td>Rp.<?=number_format($masjid['jml_donasi'], 0, ",", ".") ;?></td>
                                                     <td>Rp.<?=number_format($masjid['total_donasi'], 0, ",", ".") ;?></td>
