@@ -14,6 +14,12 @@
             return $this->db->resultSet();
         }
 
+        public function getIdMasjidPublic(){
+
+            $this->db->query("SELECT id_masjid FROM tb_masjid ORDER BY id_masjid DESC LIMIT 8");
+            return $this->db->resultSet();
+        }
+
         public function getImgMasjid(){
             $this->db->query("SELECT id_masjid, gambar FROM tb_masjid");
             return $this->db->resultSet();
@@ -68,6 +74,27 @@
                 COUNT(DISTINCT tb_sukses.id_donatur) AS total_donatur, tb_masjid.jml_donasi
                 FROM tb_sukses
                 INNER JOIN tb_masjid ON tb_sukses.id_masjid = tb_masjid.id_masjid
+                WHERE tb_masjid.id_masjid = :id_masjid");
+
+                $this->db->bind('id_masjid', $id['id_masjid']);
+                $total[$i] =  $this->db->resultSet();
+                $i++;
+            }
+
+            return $total; 
+        }
+
+        public function getMasjidPublic(){
+            $idMasjid = $this->getIdMasjidPublic();
+            $total = [];
+
+            $i = 0;
+            foreach($idMasjid as $id){
+                
+                $this->db->query("SELECT tb_masjid.id_masjid, tb_masjid.fullname, SUM(tb_sukses.jumlah) AS total_donasi, 
+                COUNT(DISTINCT tb_sukses.id_donatur) AS total_donatur, tb_masjid.jml_donasi
+                FROM tb_sukses 
+                INNER JOIN tb_masjid ON tb_sukses.id_masjid = tb_masjid.id_masjid 
                 WHERE tb_masjid.id_masjid = :id_masjid");
 
                 $this->db->bind('id_masjid', $id['id_masjid']);
