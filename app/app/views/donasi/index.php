@@ -74,7 +74,7 @@
               <?php foreach ($lists as $result) : ?>
                 <div class="col">
                   <div class="card">
-                    <img class="img-thumbnail" src="<?= BASEURL; ?>/img/masjid/<?= $data['public'][$count]['gambar'] ?>" alt="Gambar Masjid">
+                    <img class="img-thumbnail" style="width: 300px; height: 300px;" src="<?= BASEURL; ?>/img/masjid/<?= $data['public'][$count]['gambar'] ?>" alt="Gambar Masjid <?= ucwords($result['fullname']) ?>">
                     <div class="card-body">
                       <h5 class="card-title"><?= ucwords($result['fullname']) ?></h5>
                       <p class="card-text"> Target <br> <b> Rp <?= number_format($result['jml_donasi']) ?> </b> <br>
