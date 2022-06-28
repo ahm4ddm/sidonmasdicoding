@@ -41,12 +41,12 @@
                                     </div>
                                     <form class="user" action="<?=BASEURL ;?>/auth/login" method="post">
                                         <div class="form-group">
-                                            <input type="text" maxlength="64" name="username" class="form-control form-control-user"
+                                            <input type="text" maxlength="64" minlength="4" name="username" class="form-control form-control-user"
                                                 id="username" aria-describedby="username"
                                                 placeholder="Username" autocomplete="off" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" maxlength="64" name="password" class="form-control form-control-user"
+                                            <input type="password" maxlength="64" minlength="8" name="password" class="form-control form-control-user"
                                                 id="password" placeholder="Password" required>
                                         </div>
                                         <div class="form-group px-2">

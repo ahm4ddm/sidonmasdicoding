@@ -37,11 +37,11 @@
                             </div>
                             <form class="user" action="<?=BASEURL ;?>/auth/createakun" method="post">
                                 <div class="form-group">
-                                    <input type="text" name="fullname" maxlength="255" class="form-control form-control-user" id="fullname"
+                                    <input type="text" name="fullname" maxlength="255" minlength="4" class="form-control form-control-user" id="fullname"
                                         placeholder="Nama" autocomplete="off" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="username" maxlength="64" class="form-control form-control-user" id="username"
+                                    <input type="text" name="username" maxlength="64" minlength="4" class="form-control form-control-user" id="username"
                                         placeholder="Username" autocomplete="off" required>
                                 </div>
                                 <div class="form-group">
@@ -60,11 +60,11 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" maxlength="64" name="password" class="form-control form-control-user"
+                                        <input type="password" maxlength="64"  name="password" class="form-control form-control-user"
                                             id="exampleInputPassword" placeholder="Password" required>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="password" maxlength="64" name="validatepassword" class="form-control form-control-user"
+                                        <input type="password" maxlength="64" minlength="8" name="validatepassword" class="form-control form-control-user"
                                             id="exampleRepeatPassword" placeholder="Konfirmasi Password" required>
                                     </div>
                                 </div>
